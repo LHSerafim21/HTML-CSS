@@ -1,0 +1,73 @@
+:root {
+    --info-usuario-bg-color: rgb(14, 14, 14);
+    --pagina-usuario-bg-color: rgb(29, 29, 29);
+    --font-color: white;
+    --caixa-texto-bg-color: rgb(5, 1, 26);
+    --cor-terciaria-bg-color: rgb(12, 2, 59);
+}
+
+.body{
+    margin: 0;
+}
+
+#root-container{
+    --first-col-width: 30%;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: var(--first-col-width) calc(100% - var(--first-col-width));
+    color: var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#info-usuario{
+    background-image: url(Assets/Background.png);
+
+}
+
+#pagina-usuario{
+    background-color: rgb(12, 12, 12);
+}
+
+.tela-total{
+    width: 100%;
+    height: 100%;
+}
+
+#user-photo{
+    width: 55%;
+    border-radius: 50%;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.UserName{
+    padding-left: 15%;
+}
+
+#BarraDeNavegação{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selecionar {
+    margin-top: 10px;
+    width: 70%;
+    height: 50px;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    background-color: var(--cor-terciaria-bg-color);
+}
+
+.selecionar:hover {
+    cursor: pointer;
+    filter: invert(1);
+}
+/*
+
+.principais{
+
+}
+*/
