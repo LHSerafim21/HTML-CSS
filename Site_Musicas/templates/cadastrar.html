@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../static/login.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Cadastro</title>
+</head>
+
+<body class="fundo">
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+        <div class="container-fluid">
+            <div class="Logo"> <a href="index.html"> <img src="../Assets/logo.png" width="80x" headth="80px" alt="Logo"> </a> </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="font-size: 20px" style="justify-content: space-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: darkorange">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" style="color: darkorange">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="listas.html" style="color: darkorange">Listas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html" style="color: darkorange">Sobre</a>
+                    </li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+
+
+    <div id="container">
+        <div id="child">
+            <div class="container px-5 my-5">
+                <form class="needs-validation" id="loginForm">
+                    <h3 id="nomeForm" style="color: darkorange">Cadastro</h3>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="nomeCompleto" type="text" placeholder="Nome Completo" required/>
+                        <label for="nomeCompleto">Nome Completo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="nomeDeUsuario" type="text" placeholder="Nome de Usuário" required/>
+                        <label for="nomeDeUsuario">Nome de Usuário</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="senha" type="password" placeholder="Senha" required/>
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="senha" type="password" placeholder="Senha" required/>
+                        <label for="senha">Confirmar Senha</label>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-dark btn-lg" id="submitButton" type="submit">
+                            Cadastrar
+                        </button>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <a href="login.html" style="color: darkorange">Voltar ao menu de login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

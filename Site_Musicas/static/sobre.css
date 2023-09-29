@@ -1,0 +1,28 @@
+#container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#child {
+    width: 100vw;
+    height: 50vh;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fundo_sobre{
+    background-image: url("../Assets/fundo_sobre.png");
+    background-size: cover;
+}
+
+.nav-item{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Logo{
+    padding-left: 3%;
+    padding-right: 65%;
+    padding-top: 2%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../static/listas.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Listas de Álbuns</title>
+    </head>
+    <body class="fundo">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-black bg-black">
+                <div class="container-fluid">
+                    <div class="Logo"> <a href="index.html"> <img src="../Assets/logo.png" width="80x" headth="80px" alt="Logo"> </a> </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" style="font-size: 20px" style="justify-content: space-between">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" style="color: darkorange">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" style="color: darkorange">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listas.html" style="color: darkorange">Listas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html" style="color: darkorange">Sobre</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div align="center" style="padding-top: 5%;">
+            <form class="needs-validation" id="createList">
+                <h3 id="nomeForm" style="color: darkorange">Criar Lista</h3>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="nomeCompleto" type="text" placeholder="Nome Completo" required/>
+                    <label for="nomeCompleto">Nome da Lista</label>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-dark btn-lg" id="submitButton" type="submit">
+                        Cadastrar
+                    </button>
+                </div>
+                <div class="editar">
+                    <a href=""> <img src="../Assets/Remover.png" width="40x" headth="40px" alt="Remover Lista"> </a>
+                    <a href=""> <img src="../Assets/Editar.png" width="40x" headth="40px" alt="Editar Lista"> </a> 
+                </div>
+            </form>
+        </div>
+        <div style="padding-top:3%;">
+            <table class="table table-striped table-bordered table-dark"  id="child" align="center">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome da Lista</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="lista : ${listas}">
+                    <td scope="row"><span th:text="${iterator.indexOf(lista)}"></span></th>
+                    <td>Melhores Álbuns de SoundSystem Jamaicano do Ano de 1997</td>
+                </tr>
+            </tbody>
+            </table>  
+        </div>
+            </div>
+        </div>
+    </body>
+</html>
